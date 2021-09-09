@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1rem is
+  font-size: 62.5%;  //so in this case 0.625 x 16 (default browser font) = 10px
+  //ORDER OF MEDIA QUERIES MATTERS! LAST ONE IS THE ONE APPLIED IF THERE IS A CONFLICT.
+
+ // @include respond(tab-land) { //width < 1200px
+ //   font-size: 56.25%;  // 1rem = 9px, so 9/16 = 56.25%
+ // }
+
+ // @include respond(tab-port) { // width < 900px
+ //   font-size: 50% //I want 1 rem = 8px, so 8/16 = 50%
+ // }
+
+
+ // @include respond(big-desktop) {
+ //   font-size: 75%; //1rem = 12px, so 12/16 = 75%
+ // }
+}
+
+body {
+  box-sizing: border-box;
+
+  //@include respond(tab-port) { // width < 900px
+  //  padding: 0;
+  //}
+
+}
+
+.body-container {
+
+  padding: 3rem 50rem 0 50rem ;
+  
+}
+
+.grid-container {
+  padding: 2rem;
+  display: grid;
+  // border: 1px solid black;
+  grid-template-columns: 1fr 2fr; 
+  grid-template-rows: auto;
+  border: solid 1px red;
+
+}
+

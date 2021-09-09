@@ -1,0 +1,147 @@
+.card-grid {
+  // display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  // grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.card-box {
+  display: flex;
+  text-align: center;
+  padding-left: 34vw;
+  padding-top: 8vw;
+  
+}
+
+
+
+.card{
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 27rem;
+  width: 14%;
+  
+  &__side {
+    
+    height: 27rem;
+    transition: all .8s ease;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    &--front{
+      background-color: transparent; 
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      &-1 {
+       background-image: linear-gradient(to top,rgba( #cfd9df ,.2) 0%,rgba(#e2ebf0, 0.2) 100%);
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0deg);
+  }
+  
+  //FRONT SIDE STYLING
+  &__picture {
+    background-size: cover; 
+    background-blend-mode: screen;
+    height: 12rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    &--1 {
+     background-image: linear-gradient(to top,rgba( #cfd9df ,.6) 0%,rgba(#e2ebf0, .8) 100%);
+    }
+  }
+
+  &__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-white;
+    position: absolute;
+    top: 2rem;
+    right: .2rem;
+  }
+
+  &__heading-span {
+    
+    padding: 0.2rem .5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+    background-image: linear-gradient(to top,rgba( #cfd9df ,.6) 0%,rgba(#e2ebf0, .8) 100%);
+    }
+  }
+
+  &__details {
+
+   background-color: rgba(black, 0.1);
+   padding: 2rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    li {
+      text-align: center;
+      font-size: 2rem;
+      padding: 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-grey-light-2;
+      }
+    }
+  }
+
+  &__price-box {
+    color: $color-white;
+    text-align: center;
+    text-shadow: .5rem .5rem 1rem rgba(black, .2);
+  }
+
+  &__price-only {
+    font-size: 2.5rem; 
+    padding: 2rem 1rem 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: .5rem .5rem 1rem rgba(black, .2);
+  }
+
+  &__price-value {
+    font-size: 4rem;
+    font-weight: 400;
+  }
+
+
+   &__karya {
+
+      grid-column: 2 / 3;
+      grid-row: 2 / 3 ;
+   }
+
+   &__titnata {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3 ;
+
+   }
+}
+
+//TO DO
+//-finalize card into block
+//-finish backside
+//-second race 

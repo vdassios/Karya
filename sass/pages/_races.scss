@@ -1,0 +1,64 @@
+.wrapper {
+    position: relative;
+    padding-bottom: 86.9565%; // 800/920, or 56.25% for 16:9
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    iframe{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+    }
+}
+
+
+.course-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    &__right {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: auto;
+    }
+}
+    
+
+.race-info {
+    position: relative;
+    padding: 4rem;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+    &__sub {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &::after {
+      content: "";
+      background: url("../img/karya2.jpg");
+      opacity: 0.6;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;   
+    }
+
+    &__txt {
+    }
+}
+

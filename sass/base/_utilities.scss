@@ -1,0 +1,31 @@
+.race-map{
+  width: 100%;
+  height: 100%;
+  transition: transform .25s ease;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.alt-pic {
+  width: 100%;
+}
+
+
+.margin-bot-small{
+  margin-bottom: 1rem;
+}
+
+.u-indent {
+  text-indent: 1rem;
+}
+
+.u-center {
+  text-align: center; 
+}
+
+.u-left {
+  text-align: left;
+}

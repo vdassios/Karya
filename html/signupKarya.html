@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/icon-font.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+
+    <title>Karya Olympus Trail</title>
+  </head>
+  <body>
+    <header class="header" id="head">
+      <div class="header__menu" id="home">
+        <a href="../index.html" class="dropbtn">Home</a>
+      </div>
+      u
+      <div class="header__menu" id="races">
+        <a href="#" class="dropbtn">Races</a>
+        <div class="dropbtn__content">
+          <a href="racesKarya.html">Karya Olympus Trail 20km </a>
+          <a href="#">Titnata Trail 8.5km</a>
+          <a href="#">Guidelines</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="anouncements">
+        <a class="dropbtn" href=""> Anouncements </a>
+        <div class="dropbtn__content">
+          <a href="#"> 2021 </a>
+          <a href="#"> 2020</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="karya">
+        <a class="dropbtn" href=""> Karya </a>
+        <div class="dropbtn__content">
+          <a href="#"> History</a>
+          <a href="#"> How to get here </a>
+          <a href="#"> Where to stay</a>
+          <a href="#"> What to see </a>
+          <a href="#"> Hiking trails in the area</a>
+        </div>
+      </div>
+      <div class="header__menu" id="results">
+        <a class="dropbtn" href=""> Results </a>
+        <div class="dropbtn__content">
+          <a href="#"> 2021 </a>
+          <a href="#"> 2020</a>
+        </div>
+      </div>
+      <div class="header__menu" id="media">
+        <a class="dropbtn" href=""> Media </a>
+        <div class="dropbtn__content">
+          <a href="#"> Photos </a>
+          <a href="#"> Video</a>
+        </div>
+      </div>
+      <div class="header__menu" id="contact">
+        <a class="dropbtn" href=""> Contact Us </a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="body-container">
+          <h1 class="heading-primary">Registration Form</h1>
+          <h1 class="heading-secondary">Karya Olympus Trail</h1>
+
+          <form action="http://127.0.0.1:8080/" method="post">
+            <ul>
+              <li>
+                <label for="first-name">First Name</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="user__first-name"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="user__last-name"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="mail">E-mail</label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="gender">Gender</label>
+                <select id="gender" name="user__gender">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+              </li>
+              <li>
+                <label for="age">Age</label>
+                <select id="age" name="user__age">
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                </select>
+              </li>
+              <li>
+                <label for="country">Country of residence</label>
+                <select id="country" name="user__country">
+                  <option value=""></option>
+                </select>
+              </li>
+              <li>
+                <label for="town">Town</label>
+                <input
+                  type="text"
+                  id="town"
+                  name="user__town"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="postal-code">Postal Code</label>
+                <input
+                  type="text"
+                  name="postal-code"
+                  size="8"
+                  value=""
+                  maxlength="8"
+                />
+              </li>
+              <li>
+                <label for="primary-phone">Primary phone</label>
+                <input
+                  type="text"
+                  id="primary-phone"
+                  name="user__primary-phone"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="secondary-phone">Secondary phone</label>
+                <input
+                  type="text"
+                  id="secondary-phone"
+                  name="user__secondary-phone"
+                  autocomplete="off"
+                />
+              </li>
+              <li>
+                <label for="sponsor">Sponsor / Team:</label>
+                <input type="text" id="sponsor" name="user__sponsor" />
+              </li>
+              <li>
+                <label for="postal-code">Postal Code</label>
+                <input type="text" name="postal-code" size="8" value=""
+                maxlength="8" autocomplete="off"
+              </li>
+              <li>
+                <label for="size">Shirt size</label>
+                <select id="size" name="user__size">
+                  <option value="">Small</option>
+                  <option value="">Medium</option>
+                  <option value="">Large</option>
+                </select>
+              </li>
+              <li>
+                <label for="terms"
+                  ><a href="#">I accept the terms and conditions</a></label
+                >
+                <input type="checkbox" id="terms" name="user__terms" />
+              </li>
+              <li class="button">
+                <button type="submit">Submit</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>©Karya Olympus Trail. All rights reserved. | Site by VD |</p>
+    </footer>
+
+    <script>
+      document.addEventListener("scroll", function (e) {
+        if (window.scrollY == 0) {
+          document.getElementById("head").style.opacity = 1;
+        } else {
+          document.getElementById("head").style.opacity = 0.8;
+        }
+      });
+    </script>
+  </body>
+</html>

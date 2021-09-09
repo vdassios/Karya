@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: $color-black;
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+
+  &__menu {
+    color: $color-white;
+    font-size: $default-font-size;
+    margin-bottom: 1rem;
+    position: relative;
+
+
+   // &:not(:last-child) {
+   //   padding-right: $gutter-medium;
+   // }
+  }
+
+}
+
+
+//TO DO: 
+//-REMAKE THE MENU WITH UL & LI 
+//-SUBMENUS

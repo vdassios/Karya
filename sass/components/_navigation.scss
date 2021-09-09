@@ -1,0 +1,30 @@
+.menu {
+  // grid-column: 1 ;
+   box-shadow: 0rem 1rem 2rem rgba($color-black, 0.4);
+   background-color: #a5a58d;
+   font-size: $default-font-size;
+   margin-right: 5rem;
+   margin-bottom: 5rem;
+
+   &__main {
+      padding: $gutter-small 0 $gutter-medium 1rem; 
+      background-color: #b7b7a4;
+      color: #fefae0; 
+      font-weight: bold;
+
+   }
+
+
+   &__sub {
+      padding: $gutter-small 0 $gutter-small; 
+      color: #fefae0; 
+      margin-right: 1rem;
+      margin-left: 1rem;
+
+      &:not(:last-child) {
+         border-bottom: 1px solid rgba(#ddbea9, 0.4);
+
+      } 
+   }
+
+}

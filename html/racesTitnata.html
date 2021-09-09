@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/icon-font.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png" />
+
+    <title>Karya Olympus Trail</title>
+  </head>
+  <body>
+    <header class="header" id="head">
+      <div class="header__menu" id="home">
+        <a href="../index.html" class="dropbtn">Home</a>
+      </div>
+      <div class="header__menu" id="races">
+        <a href="#" class="dropbtn">Races</a>
+        <div class="dropbtn__content">
+          <a href="racesKarya.html">Karya Olympus Trail 20km </a>
+          <a href="racesTitnata.html">Titnata Trail 8.5km</a>
+          <a href="#">Guidelines</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="anouncements">
+        <a class="dropbtn" href=""> Anouncements </a>
+        <div class="dropbtn__content">
+          <a href="#"> 2021 </a>
+          <a href="#"> 2020</a>
+        </div>
+      </div>
+
+      <div class="header__menu" id="karya">
+        <a class="dropbtn" href=""> Karya </a>
+        <div class="dropbtn__content">
+          <a href="#"> History</a>
+          <a href="#"> How to get here </a>
+          <a href="#"> Where to stay</a>
+          <a href="#"> What to see </a>
+          <a href="#"> Hiking trails in the area</a>
+        </div>
+      </div>
+      <div class="header__menu" id="results">
+        <a class="dropbtn" href=""> Results </a>
+        <div class="dropbtn__content">
+          <a href="#"> 2021 </a>
+          <a href="#"> 2020</a>
+        </div>
+      </div>
+      <div class="header__menu" id="media">
+        <a class="dropbtn" href=""> Media </a>
+        <div class="dropbtn__content">
+          <a href="#"> Photos </a>
+          <a href="#"> Video</a>
+        </div>
+      </div>
+      <div class="header__menu" id="contact">
+        <a class="dropbtn" href=""> Contact Us </a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="body-container">
+          <h1 class="heading-primary">Titnata Trail</h1>
+          <div class="feature-grid">
+            <div class="feature-box">
+              <ion-icon name="calendar-number-outline"></ion-icon>
+              <h3 class="feature-box__text">DATE</h3>
+              <p>20 June 2021</p>
+            </div>
+            <div class="feature-box">
+              <ion-icon name="card-outline"></ion-icon>
+              <h3 class="feature-box__text">ENTRY FEE</h3>
+              <p>10 Euro</p>
+            </div>
+            <div class="feature-box">
+              <ion-icon name="alarm-outline"></ion-icon>
+              <h3 class="feature-box__text">START TIME</h3>
+              <p>09:00</p>
+            </div>
+            <div class="feature-box">
+              <ion-icon name="people-outline"></ion-icon>
+              <h3 class="feature-box__text">SIGNUP LIMIT</h3>
+              <p>150 Participants</p>
+            </div>
+          </div>
+
+          <div class="btn-wrapper">
+            <a class="btn btn--blue btn--round" href="#">Signup now!</a>
+          </div>
+
+          <img class="race-map" src="../img/tt.png" alt="race map" />
+          <p class="heading-secondary">Detailed course description</p>
+
+          <h3 class="heading-tertiary">
+            The course of the race follows a marked trail. The distance is 8.5km
+            and the positive vertical gain is 600m.
+          </h3>
+
+          <div class="course-grid">
+            <div class="course-grid__left">
+              <ul class="text-normal marker">
+                <li class="margin-bot">
+                  <p class="text-normal__bold">STATION 1: SELOMA</p>
+                  <ul>
+                    <li>Water</li>
+                    <li>Distance from start: 2km</li>
+                  </ul>
+                </li>
+
+                <li class="margin-bot">
+                  <p class="text-normal__bold">STATION 2: PROVATOPAZARO</p>
+                  <ul>
+                    <li>Distance from start: 5.3km</li>
+                    <li>S2-S2: 3.3km</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <p class="text-normal__bold">KARYA (FINISH)</p>
+                  <ul>
+                    <li>Distance from start: 8.5km</li>
+                    <li>Distance S2-F: 3.4km</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="course-grid__right">
+              <img src="../img/kS1.png" alt="" />
+              <img src="../img/kS2.png" alt="" />
+              <img src="../img/kS3.png" alt="" />
+            </div>
+          </div>
+
+          <div class="wrapper">
+            <iframe
+              src="https://iframe.tracedetrail.fr/en/trace/output2/111350/osm/2296295311"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              frameborder="0"
+              width="920"
+              height="800"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>©Karya Olympus Trail. All rights reserved. | Site by VD |</p>
+    </footer>
+
+    <script>
+      document.addEventListener("scroll", function (e) {
+        if (window.scrollY == 0) {
+          document.getElementById("head").style.opacity = 1;
+        } else {
+          document.getElementById("head").style.opacity = 0.8;
+        }
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
