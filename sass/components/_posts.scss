@@ -2,11 +2,12 @@
 
 //   grid-column-start: 2 ;
 
-   margin-bottom: $gutter-medium;
+   margin-bottom: 10rem; 
    padding-bottom: $gutter-medium; 
    display: inline-block;
    border-bottom: .1rem solid rgba($color-black, 0.2);
    font-size: $default-font-size;
+   width:100%;
 
     
 
@@ -21,4 +22,52 @@
 }
 
 
+.post-container {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
 
+
+.post-content {
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+   &__vis {
+      display: flex;
+      min-width: 0;
+      &--1 {
+         img {
+            width: 100%;
+            height: auto;
+         }
+      }
+
+      &--2 {
+         box-shadow: -10px 15px 20px 0 rgba(0, 0, 0,.3);
+         width: 80%;
+         margin-top: 2rem;
+         align-self: center;
+         background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(84,200,214,1) 0%, rgba(73,88,219,1) 100%)
+                     transparent;
+         p {
+            font-size: 1.6rem;
+            padding: 3rem;
+            color: rgba(255,255,255,.8);
+         }
+      }
+
+
+   }
+}
+
+
+.trans-l {
+
+        transform: translateX(-2rem);
+}
+
+.trans-r {
+
+        transform: translateX(2rem);
+}
