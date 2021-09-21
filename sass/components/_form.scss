@@ -25,6 +25,14 @@ form {
 }
 
 
+#terms {
+  width: 5%;
+}
+
+.terms {
+
+}
+
 label {
   /* Uniform size & alignment */
   display: inline-block;
@@ -63,7 +71,3 @@ select {
 
 }
 
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 20rem; /* same size as the label elements */
-}
