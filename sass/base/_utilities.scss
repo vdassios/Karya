@@ -38,3 +38,27 @@
     transform: scale(1.8);
   }
 }
+
+.trans-l {
+
+        transform: translateX(-2rem);
+}
+
+.trans-r {
+
+        transform: translateX(2rem);
+}
+
+.img-cont {
+  max-width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+  margin-bottom: 10rem;
+    
+
+}
+
+.marg-bot {
+  p {
+    margin-bottom: 3rem;
+  }
+}

@@ -23,6 +23,8 @@
 
 
 .post-container {
+   margin-top: 8rem;
+   margin-bottom: 8rem;
    display: flex;
    flex-direction: column;
    gap: 3rem;
@@ -62,12 +64,3 @@
 }
 
 
-.trans-l {
-
-        transform: translateX(-2rem);
-}
-
-.trans-r {
-
-        transform: translateX(2rem);
-}

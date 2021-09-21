@@ -1,0 +1,11 @@
+.banner{
+         box-shadow: -10px 15px 20px 0 rgba(0, 0, 0,.3);
+         background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(84,200,214,1) 0%, rgba(73,88,219,1) 100%)
+                     transparent;
+         margin-bottom: 5rem;
+         p {
+            font-size: 2rem;
+            padding: 3rem;
+            color: rgba(255,255,255,.8);
+         }
+       }

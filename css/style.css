@@ -55,6 +55,20 @@ body {
   .pop-up:hover {
     transform: scale(1.8); }
 
+.trans-l {
+  transform: translateX(-2rem); }
+
+.trans-r {
+  transform: translateX(2rem); }
+
+.img-cont {
+  max-width: 100%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 10rem; }
+
+.marg-bot p {
+  margin-bottom: 3rem; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -102,6 +116,12 @@ body {
     color: #333;
     font-weight: 700; }
 
+.text-small {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  line-height: 1.6; }
+
 li {
   padding-left: 1rem;
   margin-left: 1.5rem; }
@@ -140,6 +160,8 @@ ul {
     font-style: italic; }
 
 .post-container {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
   display: flex;
   flex-direction: column;
   gap: 3rem; }
@@ -164,12 +186,6 @@ ul {
         font-size: 1.6rem;
         padding: 3rem;
         color: rgba(255, 255, 255, 0.8); }
-
-.trans-l {
-  transform: translateX(-2rem); }
-
-.trans-r {
-  transform: translateX(2rem); }
 
 .menu {
   box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.4);
@@ -567,3 +583,12 @@ select {
     justify-self: center; }
   .guide-grid__left {
     justify-self: center; }
+
+.banner {
+  box-shadow: -10px 15px 20px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(225deg, #020024 0%, #54c8d6 0%, #4958db 100%) transparent;
+  margin-bottom: 5rem; }
+  .banner p {
+    font-size: 2rem;
+    padding: 3rem;
+    color: rgba(255, 255, 255, 0.8); }
