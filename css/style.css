@@ -531,7 +531,7 @@ select {
     padding-top: 2rem; }
 
 .hero {
-  background-image: url(../../img/karya3.jpg);
+  background-image: url(../img/karya3.jpg);
   background-size: cover;
   background-position: center;
   height: 92vh; }
