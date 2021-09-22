@@ -8,7 +8,7 @@
 
 html {
   //This defines what 1rem is
-  font-size: 62.5%;  //so in this case 0.625 x 16 (default browser font) = 10px
+  font-size: 52.5%;  //so in this case 0.625 x 16 (default browser font) = 10px
   //ORDER OF MEDIA QUERIES MATTERS! LAST ONE IS THE ONE APPLIED IF THERE IS A CONFLICT.
 
  // @include respond(tab-land) { //width < 1200px

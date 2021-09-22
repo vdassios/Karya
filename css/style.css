@@ -7,7 +7,7 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 52.5%; }
 
 body {
   box-sizing: border-box; }
@@ -303,7 +303,7 @@ h3 a {
 .dropbtn {
   color: white;
   padding: 1.1rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
   border: none;
   text-decoration: none; }
   .dropbtn:hover {
@@ -323,7 +323,7 @@ h3 a {
       display: block;
       border-bottom: 5px solid transparent;
       color: rgba(0, 0, 0, 0.8);
-      font-size: 1.2rem; }
+      font-size: 1.6rem; }
       .dropbtn__content a:hover {
         background-color: #ddd;
         text-decoration: underline; }
@@ -355,11 +355,10 @@ h3 a {
       margin-bottom: 1rem; }
     .feature-grid .feature-box:hover {
       transform: translateY(-1.5rem) scale(1.03); }
-
-ion-icon {
-  font-size: 7rem;
-  color: lightblue;
-  margin-bottom: 1.5rem; }
+    .feature-grid .feature-box ion-icon {
+      font-size: 7rem;
+      color: lightblue;
+      margin-bottom: 1.5rem; }
 
 .btn {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -517,6 +516,9 @@ select {
     font-size: 1.6rem;
     margin-bottom: 1rem;
     position: relative; }
+    .header__menu ion-icon {
+      font-size: 1rem;
+      color: white; }
 
 .footer {
   background-color: #000000;
