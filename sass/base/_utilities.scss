@@ -42,11 +42,18 @@
 .trans-l {
 
         transform: translateX(-2rem);
+
+        @include respond(phone) {
+          transform: none;
+        }
 }
 
 .trans-r {
 
         transform: translateX(2rem);
+        @include respond(phone) {
+          transform: none;
+        }
 }
 
 .img-cont {

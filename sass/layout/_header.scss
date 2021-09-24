@@ -27,7 +27,29 @@
 
 }
 
+.header {
 
+  @include respond(phone-small){
+
+  background-color: $color-black;
+  height: 8vh;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+
+  }
+
+}
+
+.header__menu {
+  @include respond(phone-small){
+&__menu {
+  display:none;
+}
+
+  }
+}
 //TO DO: 
 //-REMAKE THE MENU WITH UL & LI 
 //-SUBMENUS
