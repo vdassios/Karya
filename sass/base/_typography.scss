@@ -34,6 +34,16 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
 
+
+  @media(max-width:768px){
+    font-size:4rem;
+  }
+
+  @media(max-width:425px){
+    font-size: 3rem;
+  }
+
+
 }
 
 .heading-secondary {
@@ -43,6 +53,14 @@ body {
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(black, .8);
+
+  @media(max-width:768px){
+    font-size:2rem;
+  }
+
+  @media(max-width:425px){
+    font-size: 1.6rem;
+  }
 
 }
 

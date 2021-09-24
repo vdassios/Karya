@@ -38,9 +38,11 @@
    &__vis {
       display: flex;
       min-width: 0;
+      min-height:0;
+
       &--1 {
          img {
-            width: 100%;
+            width: 30vw;
             height: auto;
          }
       }
@@ -49,10 +51,11 @@
          box-shadow: -10px 15px 20px 0 rgba(0, 0, 0,.3);
          width: 80%;
          margin-top: 2rem;
+         display: inline-block;
          align-self: center;
          background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(84,200,214,1) 0%, rgba(73,88,219,1) 100%)
                      transparent;
-         p {
+         p,span {
             font-size: 1.6rem;
             padding: 3rem;
             color: rgba(255,255,255,.8);

@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/*
+0 - 600px : Phone
+600 - 900px : Tablet portrait;
+900 - 1200px : Tablet landscape;
+[1200px - 1800px] : Normal range outside of media queries;
+1800px + : Big desktop
+ 
+
+
+
+*/
+/*
+ breakpoint argument choices:
+ phone-small
+ tab-port
+ tab-land
+ big desktop;
+ */
 *,
 *::after,
 *::before {
@@ -8,6 +26,12 @@
 
 html {
   font-size: 52.5%; }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 768px) {
+    html {
+      font-size: 45%; } }
 
 body {
   box-sizing: border-box; }
@@ -18,7 +42,18 @@ body {
   padding: 3rem; }
 
 .body-container {
+  display: flex;
+  flex-direction: column;
   margin: 3rem 30vw 0 30vw; }
+  @media (max-width: 1024px) {
+    .body-container {
+      margin: 3rem 20vw 0 20vw; } }
+  @media (max-width: 768px) {
+    .body-container {
+      margin: 3rem 15vw 0 15vw; } }
+  @media (max-width: 425px) {
+    .body-container {
+      margin: 3rem 6vw 0 6vw; } }
 
 .grid-container {
   padding: 2rem;
@@ -90,6 +125,12 @@ body {
   font-size: 5rem;
   margin-top: 3rem;
   margin-bottom: 3rem; }
+  @media (max-width: 768px) {
+    .heading-primary {
+      font-size: 4rem; } }
+  @media (max-width: 425px) {
+    .heading-primary {
+      font-size: 3rem; } }
 
 .heading-secondary {
   font-size: 3rem;
@@ -98,6 +139,12 @@ body {
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.8); }
+  @media (max-width: 768px) {
+    .heading-secondary {
+      font-size: 2rem; } }
+  @media (max-width: 425px) {
+    .heading-secondary {
+      font-size: 1.6rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -176,17 +223,19 @@ h3 a {
   gap: 5rem; }
   .post-content__vis {
     display: flex;
-    min-width: 0; }
+    min-width: 0;
+    min-height: 0; }
     .post-content__vis--1 img {
-      width: 100%;
+      width: 30vw;
       height: auto; }
     .post-content__vis--2 {
       box-shadow: -10px 15px 20px 0 rgba(0, 0, 0, 0.3);
       width: 80%;
       margin-top: 2rem;
+      display: inline-block;
       align-self: center;
       background: linear-gradient(225deg, #020024 0%, #54c8d6 0%, #4958db 100%) transparent; }
-      .post-content__vis--2 p {
+      .post-content__vis--2 p, .post-content__vis--2 span {
         font-size: 1.6rem;
         padding: 3rem;
         color: rgba(255, 255, 255, 0.8); }
@@ -216,7 +265,6 @@ h3 a {
   position: relative;
   height: 27rem;
   width: 10%;
-  margin-left: 10rem;
   margin-top: 10rem; }
   .card__side {
     height: 27rem;
@@ -538,7 +586,7 @@ select {
   background-position: center;
   height: 92vh;
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly; }
 
 .wrapper {
   position: relative;

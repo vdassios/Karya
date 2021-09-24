@@ -5,11 +5,16 @@
   background-position: center;
   height: 92vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 
 
   
 }
+
+
+
+//desktop: hero>j-c: center, card>margin-left:10rem;
+//mobile/smaller: hero> j-c: space-evenly, card>margin-left:0
 
 
 
