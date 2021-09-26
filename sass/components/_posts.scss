@@ -42,24 +42,26 @@
       min-width: 0;
       min-height:0;
 
-   @include respond(phone) {
-      flex-direction: column;
-      .order {
-         order: 2;
+      @include respond(phone) {
+         flex-direction: column;
+         .order {
+            order: 2;
+         }
       }
-   }
+
       &--1 {
          img {
             width: 25vw;
             height: auto;
-            
          }
-      @include respond(phone){
-         img{
-             width: 100%;
+
+          @include respond(phone){
+             img{
+                 width: 100%;
+             }
+          }
+
       }
-      }
-   }
 
       &--2 {
          box-shadow: -10px 15px 20px 0 rgba(0, 0, 0,.3);
@@ -70,10 +72,10 @@
          background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(84,200,214,1) 0%, rgba(73,88,219,1) 100%)
                      transparent;
 
-      @include respond(phone){
-         width: 100%;
-         margin-top: 0;
-      }
+        @include respond(phone){
+           width: 100%;
+           margin-top: 0;
+        }
 
          p,span {
             font-size: 1.6rem;
@@ -84,6 +86,4 @@
 
 
    }
-  
 }
-
