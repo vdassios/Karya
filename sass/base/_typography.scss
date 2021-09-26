@@ -34,15 +34,13 @@ body {
   margin-top: 3rem;
   margin-bottom: 3rem;
 
-
-  @media(max-width:768px){
+  @include respond(tab-port) {
     font-size:4rem;
   }
 
-  @media(max-width:425px){
+  @include respond(tab-port) {
     font-size: 3rem;
   }
-
 
 }
 
@@ -54,13 +52,10 @@ body {
   text-align: center;
   color: rgba(black, .8);
 
-  @media(max-width:768px){
-    font-size:2rem;
+  @include respond(tab-port){
+    font-size:2.5rem;
   }
 
-  @media(max-width:425px){
-    font-size: 1.6rem;
-  }
 
 }
 
@@ -77,6 +72,15 @@ body {
   //font-weight: 700;
   //text-transform: uppercase;
   //margin-bottom: 1rem;
+
+  @include respond(tab-port){
+    font-size:1.8rem;
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(84,200,214,1) 0%, rgba(73,88,219,1) 100%)
+                       transparent;
+    box-shadow: -10px 15px 20px 0 rgba(0, 0, 0,.3);
+    color: rgba(white, .8);
+    padding: 1.5rem;
+  }
 }
 
 .text-normal {

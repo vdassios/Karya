@@ -17,15 +17,18 @@
 
 
 .course-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//    grid-template-rows: auto;
+        
+    display: flex;
+    padding-left: 5rem;
 
-    &__right {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: auto;
-    }
+     @include respond(phone-med) {
+             padding-left: 0;
+             justify-content: center;
+     }
+
 }
     
 

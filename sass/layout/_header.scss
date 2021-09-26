@@ -42,14 +42,7 @@
 
 }
 
-.header__menu {
-  @include respond(phone-small){
-&__menu {
-  display:none;
-}
 
-  }
-}
 //TO DO: 
 //-REMAKE THE MENU WITH UL & LI 
 //-SUBMENUS

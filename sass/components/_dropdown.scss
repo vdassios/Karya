@@ -6,7 +6,7 @@
   border: none;
   text-decoration: none;
 
-  &:hover {
+  &:hover, :active {
     background-color: rgba(255,255,255,0.2);
    // border-radius: 5px;
   } 
@@ -33,7 +33,7 @@
     font-size: 1.6rem;
    // border-radius: 5px;
 
-    &:hover {
+    &:hover, :active {
       background-color: #ddd;
       text-decoration: underline;
     }
@@ -46,7 +46,7 @@
 
 
 .header__menu {
-  &:hover .dropbtn__content {
+  &:hover .dropbtn__content, :active .dropbtn__content {
     display: block;
     background-color: #ddd;
     min-width:100%;

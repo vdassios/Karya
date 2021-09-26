@@ -25,13 +25,19 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 52.5%; }
-  @media (max-width: 1024px) {
+  font-size: 62.5%; }
+  @media (max-width: 64em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 48em) {
     html {
       font-size: 50%; } }
-  @media (max-width: 768px) {
+  @media (max-width: 37.5em) {
     html {
-      font-size: 45%; } }
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -44,14 +50,14 @@ body {
 .body-container {
   display: flex;
   flex-direction: column;
-  margin: 3rem 30vw 0 30vw; }
-  @media (max-width: 1024px) {
+  margin: 3rem 25vw 0 25vw; }
+  @media (max-width: 64em) {
     .body-container {
       margin: 3rem 20vw 0 20vw; } }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     .body-container {
       margin: 3rem 15vw 0 15vw; } }
-  @media (max-width: 425px) {
+  @media (max-width: 37.5em) {
     .body-container {
       margin: 3rem 6vw 0 6vw; } }
 
@@ -92,14 +98,13 @@ body {
 
 .trans-l {
   transform: translateX(-2rem); }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .trans-l {
-      transform: none;
-      flex-direction: column-reverse; } }
+      transform: none; } }
 
 .trans-r {
   transform: translateX(2rem); }
-  @media (max-width: 600px) {
+  @media (max-width: 37.5em) {
     .trans-r {
       transform: none; } }
 
@@ -132,10 +137,10 @@ body {
   font-size: 5rem;
   margin-top: 3rem;
   margin-bottom: 3rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     .heading-primary {
       font-size: 4rem; } }
-  @media (max-width: 425px) {
+  @media (max-width: 48em) {
     .heading-primary {
       font-size: 3rem; } }
 
@@ -146,12 +151,9 @@ body {
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.8); }
-  @media (max-width: 768px) {
+  @media (max-width: 48em) {
     .heading-secondary {
-      font-size: 2rem; } }
-  @media (max-width: 425px) {
-    .heading-secondary {
-      font-size: 1.6rem; } }
+      font-size: 2.5rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -160,6 +162,13 @@ body {
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.8); }
+  @media (max-width: 48em) {
+    .heading-tertiary {
+      font-size: 1.8rem;
+      background: linear-gradient(225deg, #020024 0%, #54c8d6 0%, #4958db 100%) transparent;
+      box-shadow: -10px 15px 20px 0 rgba(0, 0, 0, 0.3);
+      color: rgba(255, 255, 255, 0.8);
+      padding: 1.5rem; } }
 
 .text-normal {
   font-size: 2rem;
@@ -232,15 +241,17 @@ h3 a {
     display: flex;
     min-width: 0;
     min-height: 0; }
-    @media (max-width: 600px) {
+    @media (max-width: 37.5em) {
       .post-content__vis {
-        flex-direction: column; } }
+        flex-direction: column; }
+        .post-content__vis .order {
+          order: 2; } }
     .post-content__vis--1 img {
-      width: 30vw;
+      width: 25vw;
       height: auto; }
-      @media (max-width: 600px) {
-        .post-content__vis--1 img {
-          width: 100%; } }
+    @media (max-width: 37.5em) {
+      .post-content__vis--1 img {
+        width: 100%; } }
     .post-content__vis--2 {
       box-shadow: -10px 15px 20px 0 rgba(0, 0, 0, 0.3);
       width: 80%;
@@ -248,7 +259,7 @@ h3 a {
       display: inline-block;
       align-self: center;
       background: linear-gradient(225deg, #020024 0%, #54c8d6 0%, #4958db 100%) transparent; }
-      @media (max-width: 600px) {
+      @media (max-width: 37.5em) {
         .post-content__vis--2 {
           width: 100%;
           margin-top: 0; } }
@@ -373,7 +384,7 @@ h3 a {
   font-size: 2rem;
   border: none;
   text-decoration: none; }
-  .dropbtn:hover {
+  .dropbtn:hover, .dropbtn :active {
     background-color: rgba(255, 255, 255, 0.2); }
   .dropbtn__content {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -391,29 +402,35 @@ h3 a {
       border-bottom: 5px solid transparent;
       color: rgba(0, 0, 0, 0.8);
       font-size: 1.6rem; }
-      .dropbtn__content a:hover {
+      .dropbtn__content a:hover, .dropbtn__content a :active {
         background-color: #ddd;
         text-decoration: underline; }
 
-.header__menu:hover .dropbtn__content {
+.header__menu:hover .dropbtn__content, .header__menu :active .dropbtn__content {
   display: block;
   background-color: #ddd;
   min-width: 100%; }
 
 .feature-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-gap: 5rem; }
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+  @media (max-width: 37.5em) {
+    .feature-grid {
+      gap: 2rem; } }
   .feature-grid .feature-box {
-    margin-top: 5rem;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.8rem;
     padding: 2.5rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-    margin-bottom: 5rem; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
     .feature-grid .feature-box__text {
       font-size: 1.8rem;
       color: #333;
@@ -426,6 +443,12 @@ h3 a {
       font-size: 7rem;
       color: lightblue;
       margin-bottom: 1.5rem; }
+      @media (max-width: 26.56em) {
+        .feature-grid .feature-box ion-icon {
+          font-size: 5rem; } }
+      @media (max-width: 20em) {
+        .feature-grid .feature-box ion-icon {
+          font-size: 3rem; } }
 
 .btn {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
@@ -587,17 +610,13 @@ select {
       font-size: 1rem;
       color: white; }
 
-@media (max-width: 320px) {
+@media (max-width: 20em) {
   .header {
     background-color: #000;
     height: 8vh;
     position: sticky;
     top: 0;
     z-index: 1000; } }
-
-@media (max-width: 320px) {
-  .header__menu__menu {
-    display: none; } }
 
 .footer {
   background-color: #000000;
@@ -632,13 +651,12 @@ select {
     height: 100%; }
 
 .course-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto; }
-  .course-grid__right {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: auto; }
+  display: flex;
+  padding-left: 5rem; }
+  @media (max-width: 26.56em) {
+    .course-grid {
+      padding-left: 0;
+      justify-content: center; } }
 
 .race-info {
   position: relative;
