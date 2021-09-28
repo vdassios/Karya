@@ -54,22 +54,22 @@ body {
 
   display: flex;
   flex-direction: column;
-  margin: 3rem 25vw 0 25vw ;
+  margin: 2rem 25vw 0 25vw ;
 
   @include respond(tab-land) {
 
-    margin: 3rem 20vw 0 20vw;
+    margin: 2rem 20vw 0 20vw;
 
   }
 
   @include respond(tab-port) {
 
-    margin: 3rem 15vw 0 15vw;
+    margin: 2rem 15vw 0 15vw;
 
   }
   @include respond(phone) {
 
-    margin: 3rem 6vw 0 6vw;
+    margin: 2rem 6vw 0 6vw;
   }
 
 

@@ -32,8 +32,21 @@
   width: 10%;
 //  margin-left: 10rem;
   margin-top: 10rem;
-    
   
+  @include respond(phone) {
+    width: 20%;
+  }
+
+  @include respond(phone-med) {
+    width: 30%;
+  }
+
+  @include respond(phone-small) {
+    width: 40%;
+  }
+  
+
+
   &__side {
     
     height: 27rem;

@@ -85,10 +85,17 @@
           </div>
 
           <div class="btn-wrapper">
-            <a class="btn btn--blue btn--round" href="#">Signup now!</a>
+            <a class="btn btn--blue btn--round" href="signupTitnata.html"
+              >Signup now!</a
+            >
           </div>
 
-          <img class="race-map" src="../img/tt.png" alt="race map" />
+          <img
+            class="race-map"
+            id="raceimg"
+            src="../img/tt.png"
+            alt="race map"
+          />
           <div class="bg-wrapper">
             <p class="heading-secondary">Detailed course description</p>
 
@@ -100,25 +107,25 @@
             <!-- <div class="course-grid">
          <div class="course-grid__left"> -->
             <ul class="text-normal marker">
-              <li class="margin-bot">
-                <p class="text-normal__bold">STATION 1: SELOMA</p>
-                <ul>
+              <li>
+                <p class="text-normal__bold">STATION 1: &nbsp SELOMA</p>
+                <ul class="marker-down">
                   <li>Water</li>
                   <li>Distance from start: 2km</li>
                 </ul>
               </li>
 
-              <li class="margin-bot">
-                <p class="text-normal__bold">STATION 2: PROVATOPAZARO</p>
-                <ul>
+              <li>
+                <p class="text-normal__bold">STATION 2: &nbsp PROVATOPAZARO</p>
+                <ul class="marker-down">
                   <li>Distance from start: 5.3km</li>
                   <li>S2-S2: 3.3km</li>
                 </ul>
               </li>
 
               <li>
-                <p class="text-normal__bold">KARYA (FINISH)</p>
-                <ul>
+                <p class="text-normal__bold">KARYA &nbsp (FINISH)</p>
+                <ul class="marker-down">
                   <li>Distance from start: 8.5km</li>
                   <li>Distance S2-F: 3.4km</li>
                 </ul>
@@ -162,6 +169,13 @@
         } else {
           document.getElementById("head").style.opacity = 0.8;
         }
+      });
+
+      //img rescale
+
+      const raceimg = document.getElementById("raceimg");
+      raceimg.addEventListener("click", function () {
+        raceimg.classList.toggle("img-click");
       });
     </script>
 

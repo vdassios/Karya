@@ -91,7 +91,12 @@
             >
           </div>
 
-          <img class="race-map" src="../img/kot.png" alt="race map" />
+          <img
+            class="race-map"
+            id="raceimg"
+            src="../img/kot.png"
+            alt="race map"
+          />
           <div class="bg-wrapper">
             <p class="heading-secondary">Detailed course description</p>
 
@@ -102,58 +107,60 @@
 
             <div class="course-grid">
               <div class="course-grid__left">
-                <ul class="text-normal marker">
-                  <li class="margin-bot">
-                    <p class="text-normal__bold">STATION 1: SELOMA</p>
-                    <ul>
+                <ul class="text-normal marker-up">
+                  <li>
+                    <p class="text-normal__bold">STATION 1: &nbsp SELOMA</p>
+                    <ul class="marker-down">
                       <li>Water</li>
                       <li>Distance from start: 2km</li>
                     </ul>
                   </li>
 
-                  <li class="margin-bot">
-                    <p class="text-normal__bold">STATION 2: BICHTESI</p>
-                    <ul>
+                  <li>
+                    <p class="text-normal__bold">STATION 2: &nbsp BICHTESI</p>
+                    <ul class="marker-down">
                       <li>Water, Dry food, Fruit, Energy drink</li>
                       <li>Distance from the start: 7.6km</li>
                       <li>Distance S2-S2: 5.6km</li>
                     </ul>
                   </li>
 
-                  <li class="margin-bot">
+                  <li>
                     <p class="text-normal__bold">
-                      STATION 3: SELOMA CHECKPOINT
+                      STATION 3: &nbsp SELOMA CHECKPOINT
                     </p>
-                    <ul>
-                      <li>CUT-OFF 11:30</li>
+                    <ul class="marker-down">
+                      <em>CUT-OFF 11:30</em>
                       <li>Water, Dry food, Fruit, Energy drink</li>
                       <li>Distance from the start: 11.1km</li>
                       <li>Distance S2-S3: 3.5km</li>
                     </ul>
                   </li>
 
-                  <li class="margin-bot">
-                    <p class="text-normal__bold">STATION 4: ELATIA</p>
-                    <ul>
+                  <li>
+                    <p class="text-normal__bold">STATION 4: &nbsp ELATIA</p>
+                    <ul class="marker-down">
                       <li>Water, Dry food, Fruit, Energy drink</li>
                       <li>Distance from the start: 14km</li>
                       <li>Distance S3-S4: 2.9km</li>
                     </ul>
                   </li>
 
-                  <li class="margin-bot">
-                    <p class="text-normal__bold">STATION 5: PROVATOPAZARO</p>
-                    <ul>
+                  <li>
+                    <p class="text-normal__bold">
+                      STATION 5: &nbsp PROVATOPAZARO
+                    </p>
+                    <ul class="marker-down">
                       <li>Water, Dry food, Fruit, Energy drink</li>
                       <li>Distance from the start: 17.8km</li>
                       <li>Distance S4-S5: 3.8km</li>
                     </ul>
                   </li>
 
-                  <li class="margin-bot">
-                    <p class="text-normal__bold">KARYA (FINISH)</p>
-                    <ul>
-                      <li>CUT-OFF 14:30</li>
+                  <li>
+                    <p class="text-normal__bold">KARYA &nbsp (FINISH)</p>
+                    <ul class="marker-down">
+                      <em>CUT-OFF 14:30</em>
                       <li>Distance from the start: 22.4km</li>
                       <li>S5-F: 4.6km</li>
                     </ul>
@@ -192,6 +199,13 @@
         } else {
           document.getElementById("head").style.opacity = 0.8;
         }
+      });
+
+      //img rescale
+
+      const raceimg = document.getElementById("raceimg");
+      raceimg.addEventListener("click", function () {
+        raceimg.classList.toggle("img-click");
       });
     </script>
 

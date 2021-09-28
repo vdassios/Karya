@@ -50,16 +50,16 @@ body {
 .body-container {
   display: flex;
   flex-direction: column;
-  margin: 3rem 25vw 0 25vw; }
+  margin: 2rem 25vw 0 25vw; }
   @media (max-width: 64em) {
     .body-container {
-      margin: 3rem 20vw 0 20vw; } }
+      margin: 2rem 20vw 0 20vw; } }
   @media (max-width: 48em) {
     .body-container {
-      margin: 3rem 15vw 0 15vw; } }
+      margin: 2rem 15vw 0 15vw; } }
   @media (max-width: 37.5em) {
     .body-container {
-      margin: 3rem 6vw 0 6vw; } }
+      margin: 2rem 6vw 0 6vw; } }
 
 .grid-container {
   padding: 2rem;
@@ -72,8 +72,9 @@ body {
   height: 100%;
   transition: transform .25s ease;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
-  .race-map:hover {
-    transform: scale(1.5); }
+
+.img-click {
+  transform: scale(1.5); }
 
 .alt-pic {
   width: 100%; }
@@ -129,31 +130,34 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  font-size: 5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-  @media (max-width: 48em) {
+  font-size: 5rem; }
+  @media (max-width: 64em) {
     .heading-primary {
       font-size: 4rem; } }
   @media (max-width: 48em) {
     .heading-primary {
       font-size: 3rem; } }
+  @media (max-width: 20em) {
+    .heading-primary {
+      margin: 0; } }
 
 .heading-secondary {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-top: 3rem;
+  font-size: 4rem;
+  font-weight: 400;
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.8); }
   @media (max-width: 48em) {
     .heading-secondary {
       font-size: 2.5rem; } }
+  @media (max-width: 20em) {
+    .heading-secondary {
+      margin-bottom: 1.5rem; } }
 
 .heading-tertiary {
   font-size: 2rem;
@@ -176,8 +180,7 @@ body {
   margin-bottom: 1.5rem;
   line-height: 1.6; }
   .text-normal__bold {
-    color: #333;
-    font-weight: 700; }
+    color: #333; }
 
 .text-small {
   font-size: 1.8rem;
@@ -190,12 +193,16 @@ li {
   margin-left: 1.5rem; }
 
 ul {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 5rem; }
 
-.marker li::marker {
-  color: red;
-  content: "➤"; }
+.marker-up li::marker {
+  color: rgba(255, 0, 0, 0.8);
+  content: "◓"; }
+
+.marker-down li::marker {
+  color: rgba(255, 0, 0, 0.8);
+  content: "◒"; }
 
 .text-para {
   line-height: 1.6;
@@ -294,6 +301,15 @@ h3 a {
   height: 27rem;
   width: 10%;
   margin-top: 10rem; }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 20%; } }
+  @media (max-width: 26.56em) {
+    .card {
+      width: 30%; } }
+  @media (max-width: 20em) {
+    .card {
+      width: 40%; } }
   .card__side {
     height: 27rem;
     transition: all .8s ease;
@@ -635,10 +651,9 @@ select {
   height: 92vh;
   display: flex;
   justify-content: space-evenly; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 20em) {
     .hero {
-      background-size: 100% 100%;
-      background-repeat: no-repeat; } }
+      height: 70vh; } }
 
 .wrapper {
   position: relative;

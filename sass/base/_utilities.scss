@@ -4,9 +4,10 @@
   transition: transform .25s ease;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
-  &:hover {
-    transform: scale(1.5);
-  }
+}
+
+.img-click {
+  transform: scale(1.5);
 }
 
 .alt-pic {

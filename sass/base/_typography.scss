@@ -9,51 +9,46 @@ body {
 .card-grid {
   font-size: 5rem;
   color: $color-white;
-  
-
-  &__karya {
-
-
-  }
-
-  &__titnata {
-
-
-  }
 
 }
 
 .heading-primary {
   text-transform: uppercase;
-  font-weight:700;
+  font-weight:500;
   letter-spacing: 2px;
   text-align: center;
   color: rgba(black, .8);
   text-shadow: .5rem .5rem 1rem rgba(black, .2);
   font-size: 5rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+    
 
-  @include respond(tab-port) {
-    font-size:4rem;
+  @include respond(tab-land) {
+    font-size: 4rem;
   }
 
   @include respond(tab-port) {
     font-size: 3rem;
   }
 
+  @include respond(phone-small){
+    margin: 0;
+  }
+
 }
 
 .heading-secondary {
-  font-size: 3rem;
-  font-weight: 500;
-  margin-top: 3rem;
+  font-size: 4rem;
+  font-weight: 400;
   margin-bottom: 3rem;
   text-align: center;
   color: rgba(black, .8);
 
   @include respond(tab-port){
     font-size:2.5rem;
+  }
+
+  @include respond(phone-small){
+    margin-bottom: 1.5rem;
   }
 
 
@@ -94,7 +89,6 @@ body {
   &__bold {
    // text-shadow: 0.1rem .2rem .2rem grey;
     color: $color-grey-dark-3;
-    font-weight: 700;
   }
 
 }
@@ -115,18 +109,26 @@ li {
 }
 
 ul {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 
 
 
-.marker{
+.marker-up{
   
  li::marker {
-   color: red;
-   content: "➤";
+   color: rgba(red,.8);
+   content: "◓";
  }
+}
+
+.marker-down{
+  li::marker {
+   color: rgba(red,.8);
+   content: "◒";
+ }
+
 }
 
 
