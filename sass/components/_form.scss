@@ -11,6 +11,22 @@ form {
   border: 1px solid #CCC;
   border-radius: 1rem;
 
+  @include respond(tab-port) {
+    width: 40vw; 
+  }
+  @include respond(phone) {
+    width: 50vw;
+  }
+  @include respond(phone-med) {
+    width: 60vw;
+  }
+  @include respond(phone-small) {
+    width: 70vw;
+  }
+  
+  
+  
+
   ul {
     list-style: none;
     padding: 0;
@@ -40,6 +56,19 @@ label {
   text-align: right;
   font-size: 1.6rem;
   padding-right: 1rem;
+
+
+  @include respond(phone) {
+    width: 15vw;
+  }
+
+  @include respond(phone-med) {
+    width: 20vw;
+  }
+
+  @include respond(phone-small) {
+    width: 25vw;
+  }
 }
 
 input,
@@ -63,6 +92,19 @@ select {
     border: 1px solid rgba(red, .5);
     box-shadow: 0 0 10px rgba(red, .3);
   }
+
+  @include respond(tab-port) {
+    width: 15vw; 
+  }
+  @include respond(phone) {
+    width: 20vw;
+  }
+  @include respond(phone-med) {
+    width: 25vw;
+  }
+  @include respond(phone-small) {
+    width: 30vw;
+  }
 }
 
 select {
@@ -71,3 +113,8 @@ select {
 
 }
 
+.note {
+  font-size: 1.2rem;
+  color: rgba(red, .8);
+  padding-left: 1rem;
+}

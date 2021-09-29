@@ -6,6 +6,13 @@
   border: none;
   text-decoration: none;
 
+  @include respond(phone-med) {
+    font-size:1.6rem;
+  }
+
+  @media  (max-width: 21.25em) { /*340px*/
+    font-size: 1.3rem;
+  }
   &:hover, :active {
     background-color: rgba(255,255,255,0.2);
    // border-radius: 5px;

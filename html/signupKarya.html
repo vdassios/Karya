@@ -19,7 +19,6 @@
       <div class="header__menu" id="home">
         <a href="../index.html" class="dropbtn">Home</a>
       </div>
-      u
       <div class="header__menu" id="races">
         <a href="#" class="dropbtn">Races</a>
         <div class="dropbtn__content">
@@ -64,49 +63,65 @@
           <h1 class="heading-primary">Registration Form</h1>
           <h1 class="heading-secondary">Karya Olympus Trail</h1>
 
-          <form action="http://127.0.0.1:8080/" method="post">
+          <form action="" method="post">
             <ul>
               <li>
-                <label for="first-name">First Name</label>
+                <label for="first-name">First Name *</label>
                 <input
                   type="text"
                   id="first-name"
                   name="user__first-name"
+                  pattern="[a-zA-Z]+"
                   autocomplete="off"
+                  required
                 />
               </li>
               <li>
-                <label for="last-name">Last Name</label>
+                <label for="last-name">Last Name *</label>
                 <input
                   type="text"
                   id="last-name"
                   name="user__last-name"
                   autocomplete="off"
+                  pattern="[a-zA-Z]+"
+                  required="required"
                 />
               </li>
               <li>
-                <label for="mail">E-mail</label>
+                <label for="mail">E-mail *</label>
                 <input
                   type="email"
                   id="mail"
                   name="user_email"
                   autocomplete="off"
+                  required="required"
                 />
               </li>
               <li>
-                <label for="gender">Gender</label>
-                <select id="gender" name="user__gender">
+                <label for="gender">Gender *</label>
+                <select id="gender" name="user__gender" required="required">
                   <option value="">Male</option>
                   <option value="">Female</option>
                 </select>
               </li>
               <li>
-                <label for="age">Age</label>
-                <input value="" type="date" id="age" name="user__age" />
+                <label for="age">Age *</label>
+                <input
+                  value=""
+                  type="date"
+                  id="age"
+                  name="user__age"
+                  required="required"
+                />
               </li>
               <li>
-                <label for="country">Country of residence</label>
-                <select value="" id="country" name="user__country">
+                <label for="country">Country of residence *</label>
+                <select
+                  value=""
+                  id="country"
+                  name="user__country"
+                  required="required"
+                >
                   <option value="Afganistan">Afghanistan</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
@@ -390,12 +405,13 @@
                   id="town"
                   name="user__town"
                   autocomplete="off"
+                  pattern="[a-zA-Z]+"
                 />
               </li>
               <li>
                 <label for="postal-code">Postal Code</label>
                 <input
-                  type="text"
+                  type="number"
                   name="postal-code"
                   size="8"
                   value=""
@@ -403,18 +419,19 @@
                 />
               </li>
               <li>
-                <label for="primary-phone">Primary phone</label>
+                <label for="primary-phone">Primary phone *</label>
                 <input
-                  type="text"
+                  type="number"
                   id="primary-phone"
                   name="user__primary-phone"
                   autocomplete="off"
+                  required="required"
                 />
               </li>
               <li>
                 <label for="secondary-phone">Secondary phone</label>
                 <input
-                  type="text"
+                  type="number"
                   id="secondary-phone"
                   name="user__secondary-phone"
                   autocomplete="off"
@@ -422,16 +439,16 @@
               </li>
               <li>
                 <label for="sponsor">Sponsor / Team:</label>
-                <input type="text" id="sponsor" name="user__sponsor" />
+                <input
+                  type="text"
+                  pattern="[a-zA-Z]+"
+                  id="sponsor"
+                  name="user__sponsor"
+                />
               </li>
               <li>
-                <label for="postal-code">Postal Code</label>
-                <input type="text" name="postal-code" size="8" value=""
-                maxlength="8" autocomplete="off"
-              </li>
-              <li>
-                <label for="size">Shirt size</label>
-                <select id="size" name="user__size">
+                <label for="size">Shirt size *</label>
+                <select id="size" name="user__size" required="required">
                   <option value="">Small</option>
                   <option value="">Medium</option>
                   <option value="">Large</option>
@@ -444,7 +461,12 @@
                     terms and conditions</a
                   ></label
                 >
-                <input type="checkbox" id="terms" name="user__terms" />
+                <input
+                  type="checkbox"
+                  id="terms"
+                  name="user__terms"
+                  required="required"
+                />
               </li>
               <li class="button">
                 <div class="btn-wrapper">
@@ -452,6 +474,7 @@
                 </div>
               </li>
             </ul>
+            <p class="note">Fields marked with * are required.</p>
           </form>
         </div>
       </section>

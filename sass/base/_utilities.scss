@@ -4,6 +4,12 @@
   transition: transform .25s ease;
   box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
 
+  @include respond(phone) {
+    .image-rotate{
+      transform: rotate(-90deg);
+    }
+  }
+
 }
 
 .img-click {

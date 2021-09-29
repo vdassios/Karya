@@ -19,6 +19,9 @@
 
 
 .results-table {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
 
   table{
     border-collapse: separate;
