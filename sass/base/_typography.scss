@@ -131,7 +131,20 @@ ul {
 
 }
 
+.marker-red{
+  li::marker {
+   color: rgba(red,.5);
+  }
+  li > p {
+    margin-bottom: 2rem;
+  }
+}
 
+.text-red {
+
+   color: rgba(red,.5);
+   
+}
 .text-para {
   line-height: 1.6;
   text-indent: 1rem;
